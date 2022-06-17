@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row forms">
+        <div class="col-6">
+        <h2>Добавить запись</h2>
+            <form enctype="multipart/form-data" id="form-add">
+                <div class="form-group form">
+                    <label for="name" class="form-label">ФИО</label>
+                    <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="form-group form">
+                    <label for="company" class="form-label">Компания</label>
+                    <input type="text" name="company" class="form-control" id="company">
+                </div>
+                <div class="form-group form">
+                    <label for="phone" class="form-label">Телефон</label>
+                    <input type="tel" name="phone" class="form-control" id="phone">
+                </div>
+                <div class="form-group form">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="email">
+                </div>
+                <div class="form-group form">
+                    <label for="born" class="form-label">Дата рождения</label>
+                    <input type="date" name="born" class="form-control" id="born">
+                </div>
+                <div class="form-group form">
+                    <label for="photo" class="form-label">Компания</label>
+                    <input type="file" name="photo" class="form-control" id="photo">
+                </div>
+                <button type="submit" id="add-note" class="btn btn-primary">Добавить</button>
+            </form>
+        </div>
+        <div class="col-6">
+        <h2>Редактировать запись</h2>
+            <form id="edit-form">
+                <div class="form-group form">
+                    <label for="edit-name" class="form-label">Фио</label>
+                    <input type="text" name="name" class="form-control" id="edit-name">
+                </div>
+                <div class="form-group form">
+                    <label for="edit-company" class="form-label">Компания</label>
+                    <input type="text" name="company" class="form-control" id="edit-company">
+                </div>
+                <div class="form-group form">
+                    <label for="edit-phone" class="form-label">Телефон</label>
+                    <input type="tel" name="phone" class="form-control" id="edit-phone">
+                </div>
+                <div class="form-group form">
+                    <label for="edit-email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" id="edit-email">
+                </div>
+                <div class="form-group form">
+                    <label for="edit-born" class="form-label">Дата рождения</label>
+                    <input type="date" name="born" class="form-control" id="edit-born">
+                </div>
+                <div class="form-group form">
+                    <label for="edit-photo" class="form-label">Фото</label>
+                    <input type="file" name="photo" class="form-control" id="edit-photo">
+                </div>
+                <button type="submit" id="edit-note" class="btn btn-primary">Редактировать</button>
+                <button id="cancel-post" class="btn btn-primary">Отменить</button>
+            </form>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="post-list">
+
+    </div>
+</div>
+    <div class="row">
+        <div class="w-50 mx-auto">
+            <div class="pagination">
+                <ul id="pagination">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

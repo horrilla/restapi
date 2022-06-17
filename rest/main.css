@@ -1,0 +1,48 @@
+.form {
+    width: 500px;
+}
+
+.forms {
+    margin-bottom: 50px;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+}
+
+
+img {
+    width: 80%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+#pagination {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#pagination li {
+    font-size: 20px;
+    margin-left: 5px;
+    transition: .2s ease-in-out;
+    border: 1px solid #0d6efd;
+    border-radius: 2px;
+    padding: 0 10px 0 10px;
+}
+
+#pagination li:hover, #pagination li.active {
+    cursor: pointer;
+    border: 1px solid #0d6efd;
+    color: #fff;
+    background-color: #0d6efd;
+}
